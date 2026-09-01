@@ -216,7 +216,7 @@ module.exports.onChat = async ({
 
         if (hasTrigger) {
             const arr = body.replace(/^\S+\s*/, "")
-            const randomReplies = ["hello 😚", "Yes bolo😀, I am here 🍂", "What's up? 🦥", "Bolo jaan ki korte pari tomar jonno"];
+            const randomReplies = ["hello 😚", ",Annnu, amar jaan… bolo, tomar jonno ami ar ki korte pari? 🥹🤍  🍂", "What's up? 🦥", "Bolo jaan ki korte pari tomar jonno"];
             if (!arr) {
                 return await api.sendMessage(randomReplies[Math.floor(Math.random() * randomReplies.length)], event.threadID, (error, info) => {
                     if (!info) message.reply("info obj not found")
